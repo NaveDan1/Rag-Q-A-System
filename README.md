@@ -19,10 +19,15 @@ An intelligent, AI-powered system for asking questions about uploaded academic d
 
 ## 🙌 Don’t Know How to Code?
 
-👉 Just click to run it instantly:
+👉 **One-click run via GitHub Codespaces:**
 
-[![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=YourUsername/Nave-AI&machine=basicLinux&devcontainer_path=.devcontainer/devcontainer.json)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=YourUsername/Nave-AI&machine=basicLinux&devcontainer_path=.devcontainer/devcontainer.json)
 
+> Once Codespace is open, the server will automatically run using:
+
+```bash
+docker-compose up --build
+```
 Then go to:  
 📎 `http://localhost:5000/apidocs`
 
@@ -71,9 +76,12 @@ app/
 
 ## ⚙️ Local Setup (Developers)
 
-```bash
+
 # Step 1: Build and run the app
+```bash
 docker-compose up --build
+```
+
 
 # Step 2: Open the Swagger UI
 http://localhost:5000/apidocs

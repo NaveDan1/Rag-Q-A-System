@@ -1,0 +1,14 @@
+# Dockerfile.ollama
+FROM ollama/ollama
+
+USER root
+
+# Install curl so "ollama pull" works
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
+# Copy custom entrypoint script into the image
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Set the container to run the entrypoint script on startup
+ENTRYPOINT ["/entrypoint.sh"]

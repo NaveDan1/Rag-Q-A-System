@@ -1,0 +1,15 @@
+flask
+flask-cors
+flasgger
+pydantic
+chromadb
+pymongo
+pymupdf
+requests
+pdfplumber
+langchain_text_splitters
+langchain
+datetime
+langchain_ollama
+langchain-chroma
+flask_restx
